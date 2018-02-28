@@ -1,3 +1,29 @@
-<div class="middleScreen">
-  <p>Charts coming soon ...</p>
-</div>
+<!--<div class="middleScreen">-->
+  <!--<p>Charts coming soon ...</p>-->
+<!--</div>-->
+
+<mat-tab-group>
+  <mat-tab label="X-Y-chart">
+    <div class="lowPadding">
+
+      <h3>Custom X,Y chart</h3>
+
+      <form #form="ngForm" (ngSubmit)="this.onAddXYItem(form)">
+      <mat-form-field>
+        <input matInput ngModel
+               type="number" placeholder="X-Axis" name="x" >
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput ngModel
+               type="number" placeholder="Y-Axis" name="y" >
+      </mat-form-field>
+      <button mat-raised-button color="primary"
+              [disabled]="!form.valid" type="submit">Add point</button>
+      </form>
+
+      <hr>
+      <div #pieChart ></div>
+
+    </div>
+  </mat-tab>
+</mat-tab-group>
