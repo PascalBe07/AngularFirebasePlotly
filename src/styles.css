@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 body {
   margin: 0;
@@ -8,10 +10,23 @@ body {
 }
 
 .middleScreen {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.lowPadding {
+  padding: 10px;
+}
+
+main {
+  width: 80%;
+  margin: 50px auto;
 }
