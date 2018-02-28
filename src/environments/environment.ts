@@ -4,5 +4,13 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyBWJfu5ikJ3JU08reIzZEpd8iFJBQ8Uuxw",
+    authDomain: "angularplotly.firebaseapp.com",
+    databaseURL: "https://angularplotly.firebaseio.com",
+    projectId: "angularplotly",
+    storageBucket: "angularplotly.appspot.com",
+    messagingSenderId: "998994417898"
+  }
 };
